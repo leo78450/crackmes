@@ -1,0 +1,1 @@
+nasm -f elf64 asm0X.s && ld asm0X.o && ./a.out
