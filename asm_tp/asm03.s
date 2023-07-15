@@ -27,12 +27,13 @@ _start:
 	pop rax
 	
 	; cmp input with 42 and jump if input is not equal to 42 
-	cmp byte[rax], "4"
+	cmp byte[rax], '4'
 	jne test
-	cmp byte[rax+1], "2"
+	cmp byte[rax+1], '2'
 	jne test
-	cmp byte[rax+2], 10 
-	jne test
+	;cmp byte[rax+2], 10 
+	;jne test
+	
 
 	; print 1337
 	mov rax, 1
